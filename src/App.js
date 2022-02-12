@@ -73,7 +73,7 @@ function App() {
         let {name: network} = await provider.getNetwork();
         console.log("network",network);
         if (network !== process.env.REACT_APP_NETWORK) {
-            alert("Please select " + process.env.REACT_APP_NETWORK + " network");
+            alert("Please select Ethereum Mainnet network");
             setNetwork("")
         } else {
             setNetwork(process.env.REACT_APP_NETWORK);
